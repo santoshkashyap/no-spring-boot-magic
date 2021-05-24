@@ -19,14 +19,7 @@ public class NoSpringBootMagicApplication {
         SpringApplication.run(NoSpringBootMagicApplication.class, args);
     }
 
-    @RestController
-    static class HelloController {
 
-        @GetMapping("/")
-        public String sayHello() {
-            return "Hello World!";
-        }
-    }
 
     @Bean
     public ServletWebServerFactory servletWebServerFactory() {
