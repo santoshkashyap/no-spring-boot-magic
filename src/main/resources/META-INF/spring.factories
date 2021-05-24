@@ -1,4 +1,4 @@
-config.EnableMagicAppConfig=\
-  config.TomcatConfig,\
-  config.DispatcherServletConfig,\
-  config.MvcConfig
+com.no.spring.manual.boot.config.EnableMagicAppConfig=\
+  com.no.spring.manual.boot.config.TomcatConfig,\
+  com.no.spring.manual.boot.config.DispatcherServletConfig,\
+  com.no.spring.manual.boot.config.MvcConfig

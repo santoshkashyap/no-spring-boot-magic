@@ -19,7 +19,7 @@ public class UndertowConfig {
         return new UndertowServletWebServerFactory();
     }
 
-    public class OnUndertowCondition implements Condition {
+    public static class OnUndertowCondition implements Condition {
 
         @Override
         public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {

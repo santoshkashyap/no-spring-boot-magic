@@ -19,7 +19,7 @@ public class TomcatConfig {
         return new TomcatServletWebServerFactory();
     }
 
-    public class OnTomcatCondition implements Condition {
+        public static class OnTomcatCondition implements Condition {
 
         @Override
         public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {

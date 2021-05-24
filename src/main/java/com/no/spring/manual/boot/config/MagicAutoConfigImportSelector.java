@@ -14,6 +14,11 @@ public class MagicAutoConfigImportSelector implements DeferredImportSelector, Be
         return SpringFactoriesLoader
             .loadFactoryNames(EnableMagicAppConfig.class, this.classLoader)
             .toArray(new String[]{});
+
+       /* return new String[]{"com.no.spring.manual.boot.config.TomcatConfig",
+            "com.no.spring.manual.boot.config.DispatcherServletConfig",
+            "com.no.spring.manual.boot.config.MvcConfig"};*/
+
     }
 
     @Override
