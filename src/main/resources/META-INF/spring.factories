@@ -1,0 +1,4 @@
+config.EnableMagicAppConfig=\
+  config.TomcatConfig,\
+  config.DispatcherServletConfig,\
+  config.MvcConfig
