@@ -8,12 +8,12 @@ import java.lang.annotation.Target;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
+import org.springframework.web.servlet.DispatcherServlet;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-@ComponentScan
-@Configuration
-@EnableMagicAppConfig
-public @interface MagicApp {
+@Import({TomcatConfig.class, DispatcherServlet.class, MvcConfig.class})
+public @interface EnableMagicAppConfig {
 
 }
