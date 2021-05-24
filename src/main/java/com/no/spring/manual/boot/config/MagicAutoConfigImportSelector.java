@@ -7,8 +7,9 @@ public class MagicAutoConfigImportSelector implements DeferredImportSelector {
 
     @Override
     public String[] selectImports(AnnotationMetadata annotationMetadata) {
-        return new String[]{"config.TomcatConfig.class",
+        return new String[]{"config.TomcatConfig",
             "config.DispatcherServletConfig",
             "config.MvcConfig"};
     }
+
 }
